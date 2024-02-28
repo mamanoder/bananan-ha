@@ -1,0 +1,63 @@
+<!-- admin_panel.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        .admin-panel {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        button {
+            width: 100%;
+            background-color: #3498db;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+</head>
+<body>
+    <h2>Welcome, Admin!</h2>
+    <div class="admin-panel">
+        <button onclick="redirectToMyPanel()">My Panel</button>
+        <button onclick="redirectToEditUsers()">Edit Users</button>
+    </div>
+
+    <script>
+        function redirectToMyPanel() {
+            window.location.href = "/admin/my_panel"; // Replace with the actual URL of your admin panel page
+        }
+
+        function redirectToEditUsers() {
+            window.location.href = "/admin/edit_users"; // Replace with the actual URL of your edit users page
+        }
+    </script>
+</body>
+</html>
